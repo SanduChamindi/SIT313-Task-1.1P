@@ -1,185 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Full Stack Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Navigation Menu -->
-    <nav class="sticky-nav">
-        <div class="nav-container">
-            <div class="logo">Sanduni<span>Chamindi</span></div>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#work" class="nav-link">Work</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sanduni Chamindi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Sanduni<span>Chamindi</span></div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+      </ul>
     </nav>
 
-    <!-- Header with hover effect -->
-    <header class="header-image" id="about">
-        <div class="header-overlay">
-            <div class="header-text">
-                <h1 class="title-animate">Hey, I'm <span class="name-highlight">Sanduni Chamindi</span></h1>
-            </div>
-        </div>
+    <header class="header-img">
+      <div class="hover-text">Hello, I'm Sanduni</div>
     </header>
 
-    <!-- Profile Section -->
-    <section class="profile">
-        <div class="profile-container">
-            <img src="images/profile-photo.png" alt="Your Name" class="profile-photo">
-            <div class="profile-content">
-                <h2>Hey, I'm <span class="name-highlight">Sanduni Chamindi</span></h2>
-                <p class="profile-description">I am a student of Deakin University in Melbourne, Australia.</p>
-                <div class="social-links">
-                    <a href="https://github.com/SanduChamindi" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/sanduni-chamindi-65954b310/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
+    <section id="about" class="profile">
+      <img src="images/profile-photo.png" alt="Profile Photo" />
+      <p><b>I am a Software Engineering Student in Deakin University.</b></p>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="work">
-        <div class="section-header">
-            <h2>Here's what I've done so far</h2>
-            <div class="divider"></div>
+    <section id="work" class="projects">
+      <h2>My Projects</h2>
+
+      <div class="project">
+        <img src="images/project1.jpg" alt="Project 1" />
+        <div class="project-description">
+          <h3>Smart Parking System</h3>
+          <p>
+            <a href="https://github.com/SanduChamindi/SIT210_FinalProject"
+              >GitHub Link</a
+            >
+          </p>
+          <p>
+            The **MAT Smart Car Parking System** is an automated solution
+            designed to streamline parking management using sensors,
+            microcontrollers, and real-time monitoring. By detecting vehicle
+            presence through IR or ultrasonic sensors, the system guides drivers
+            to available slots via LED indicators or a mobile app, reducing
+            search time and congestion. It integrates barrier controls, digital
+            payment options, and centralized tracking to optimize space
+            utilization, enhance security, and minimize human intervention.
+            Ideal for smart cities, malls, and corporate campuses, this system
+            improves efficiency, reduces emissions, and ensures a hassle-free
+            parking experience.
+          </p>
         </div>
-        <div class="project-grid">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project1.jpg" alt="Project 1">
-                    <div class="project-overlay">
-                        <a href="https://github.com/SanduChamindi/SIT210_FinalProject" class="project-link"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Smart Car Park</h3>
-                    <p>Project description goes here with key technologies used.</p>
-                    <div class="project-tags">
-                        <span>Python</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project2.png" alt="Project 2">
-                    <div class="project-overlay">
-                        <a href="https://github.com/SanduChamindi/Car-Game" class="project-link"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Car Game</h3>
-                    <p>Project description goes here with key technologies used.</p>
-                    <div class="project-tags">
-                        <span>Kotlin</span>
-                    </div>
-                </div>
-            </div>
+      </div>
+
+      <div class="project">
+        <img src="images/project2.png" alt="Project 2" />
+        <div class="project-description">
+          <h3>Car Game</h3>
+          <p>
+            <a href="https://github.com/SanduChamindi/Car-Game">GitHub Link</a>
+          </p>
+          <p>
+            "SpeedRacer Kotlin" is a fast-paced 2D car game built using Kotlin,
+            where players control a high-speed vehicle dodging obstacles,
+            collecting power-ups, and racing against the clock. With intuitive
+            touch/swipe controls, dynamic difficulty levels, and vibrant
+            retro-style graphics, the game offers an addictive arcade
+            experience. Features include real-time scoring, fuel management, and
+            unlockable cars, all optimized for smooth performance on Android
+            devices. Built entirely in Kotlin, this game showcases clean code,
+            object-oriented design, and efficient collision detection for a
+            seamless mobile gaming experience
+          </p>
         </div>
+      </div>
     </section>
 
-    <!-- Image Gallery -->
     <section class="gallery">
-        <div class="section-header">
-            <h2>My Photos</h2>
-            <div class="divider"></div>
-        </div>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="images/gallery/photo1.png" alt="Photo 1">
-                <div class="gallery-overlay">
-                    <div class="overlay-content"><p>27/10/2024</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/gallery/photo2.png" alt="Photo 2">
-                <div class="gallery-overlay">
-                    <div class="overlay-content">
-                        <p>13/03/2024</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/gallery/photo3.png" alt="Photo 3">
-                <div class="gallery-overlay">
-                    <div class="overlay-content">
-                        <p>19/09/2023</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <h2>My Gallery</h2>
+      <div class="images">
+        <img src="images/gallery/photo1.png" alt="Gallery Image 1" />
+        <img src="images/gallery/photo2.png" alt="Gallery Image 2" />
+        <img src="images/gallery/photo3.png" alt="Gallery Image 3" />
+      </div>
     </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="section-header">
-            <h2>Contact Me</h2>
-            <div class="divider"></div>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-method">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Phone</h3>
-                        <a href="tel:+61412345678">+61 410 771 127</a>
-                    </div>
-                </div>
-                <div class="contact-method">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Email</h3>
-                        <a href="sandunichamindi4@gmail.com">sandunichamindi4@gmail.com</a>
-                    </div>
-                </div>
-                <div class="contact-method">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin-in"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/sanduni-chamindi-65954b310/" target="_blank">https://www.linkedin.com/in/sanduni-chamindi-65954b310/</a>
-                    </div>
-                </div>
-            </div>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; <span id="year"></span> Sanduni Chamindi. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
